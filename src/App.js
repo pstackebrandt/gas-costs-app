@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
+import { DEFAULT_DISTANCE, DEFAULT_CONSUMPTION, DEFAULT_PRICE } from './constants';
 import './App.css';
-
-const DEFAULT_DISTANCE = 1;
-const DEFAULT_CONSUMPTION = 8;
-const DEFAULT_PRICE = 5;
 
 function App() {
   const [distance, setDistance] = useState(DEFAULT_DISTANCE);
