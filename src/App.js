@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { DEFAULT_DISTANCE, DEFAULT_CONSUMPTION, DEFAULT_PRICE } from './constants';
 import './App.css';
+import NumberInputField from './NumberInputField';
 
 function App() {
   const [distance, setDistance] = useState(DEFAULT_DISTANCE);
@@ -27,13 +28,13 @@ function App() {
       { /*Input area */}
       <div className="InputArea">
         { /*Input of driven distance */}
-        <label htmlFor="distance">Gefahrene Kilometer:</label>
-        <input type="number"
+        <NumberInputField
+          label="Gefahrene Kilometer:"
           id="distance"
-          name="distance"
           value={distance}
-          onChange={(e) => setDistance(Number(e.target.value))}
+          onChange={setDistance}
         />
+
         <br />
         { /*Input of fuel consumption */}
         <label htmlFor="consumption">Verbrauch auf 100 km:</label>
