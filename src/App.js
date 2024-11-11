@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import './App.css';
 
+const DEFAULT_DISTANCE = 1;
+const DEFAULT_CONSUMPTION = 8;
+const DEFAULT_PRICE = 5;
+
 function App() {
-  const [distance, setDistance] = useState(0);
-  const [consumption, setConsumption] = useState(0);
-  const [price, setPrice] = useState(0);
+  const [distance, setDistance] = useState(DEFAULT_DISTANCE);
+  const [consumption, setConsumption] = useState(DEFAULT_CONSUMPTION);
+  const [price, setPrice] = useState(DEFAULT_PRICE);
   const [totalCost, setTotalCost] = useState(0);
   const [costPerKilometer, setCostPerKilometer] = useState(0);
 
