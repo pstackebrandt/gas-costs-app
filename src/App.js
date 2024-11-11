@@ -1,37 +1,73 @@
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+  const [distance, setDistance] = useState(0);
+  const [consumption, setConsumption] = useState(0);
+  const [price, setPrice] = useState(0);
+  const [totalCost, setTotalCost] = useState(0);
+  const [costPerKilometer, setCostPerKilometer] = useState(0);
+
+  const calculateCosts = () => {
+    const total = (distance / 100) * consumption * price;
+    const perKilometer = total / distance;
+    setTotalCost(total);
+    setCostPerKilometer(perKilometer);
+  };
+
   return (
     <div className="App">
+      { /*Title of the page */}
       <div className="PageTitle">
         <h1>Fahrtkosten-Rechner</h1>
         <p>Wer nicht fährt, hat keine Kosten. :-)</p>
       </div>
+
+      { /*Input area */}
       <div className="InputArea">
         { /*Input of driven distance */}
-        <label for="distance">Gefahrene Kilometer:</label>
-        <input type="number" id="distance" name="distance" />
+        <label htmlFor="distance">Gefahrene Kilometer:</label>
+        <input type="number"
+          id="distance"
+          name="distance"
+          value={distance}
+          onChange={(e) => setDistance(Number(e.target.value))}
+        />
         <br />
         { /*Input of fuel consumption */}
-        <label for="consumption">Verbrauch auf 100 km:</label>
-        <input type="number" id="consumption" name="consumption" />
+        <label htmlFor="consumption">Verbrauch auf 100 km:</label>
+        <input
+          type="number"
+          id="consumption"
+          name="consumption"
+          value={consumption}
+          onChange={(e) => setConsumption(Number(e.target.value))}
+        />
         <br />
         { /*Input of fuel price */}
-        <label for="price">Preis pro Liter:</label>
-        <input type="number" id="price" name="price" />
+        <label htmlFor="price">Preis pro Liter:</label>
+        <input
+          type="number"
+          id="price"
+          name="price"
+          value={price}
+          onChange={(e) => setPrice(Number(e.target.value))}
+        />
         <br />
         { /*Button to calculate total costs */}
-        <button type="button" id="calculate">Berechnen</button>
+        <button type="button" id="calculate" onClick={calculateCosts}>Berechnen</button>
       </div>
       <br />
+
+      { /*Output area */}
       <div className="ResultArea">
         { /*Output of total costs */}
-        <label for="total">Gesamtkosten:</label>
-        <output id="total"></output>
+        <label htmlFor="total">Gesamtkosten:</label>
+        <output id="total">{totalCost.toFixed(2)}</output>
         <br />
         { /*Output of costs per kilometer */}
-        <label for="perKilometer">Kosten pro Kilometer:</label>
-        <output id="perKilometer"></output>
+        <label htmlFor="perKilometer">Kosten pro Kilometer:</label>
+        <output id="perKilometer">{costPerKilometer.toFixed(2)}</output>
       </div>
     </div>
   );
