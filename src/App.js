@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { DEFAULT_DISTANCE, DEFAULT_CONSUMPTION, DEFAULT_PRICE } from './constants';
 import './App.css';
 import NumberInputField from './NumberInputField';
+import OutputFieldWithNumber from './OutputFieldWithNumber';
 
 function App() {
   const [distance, setDistance] = useState(DEFAULT_DISTANCE);
@@ -46,14 +47,14 @@ function App() {
 
         <br />
         { /*Input of fuel price */}
-        <NumberInputField 
+        <NumberInputField
           label="Preis pro Liter:"
           id="price"
           value={price}
           onChange={setPrice}
         />
 
-        
+
         <br />
         { /*Button to calculate total costs */}
         <button type="button" id="calculate" onClick={calculateCosts}>Berechnen</button>
@@ -63,12 +64,17 @@ function App() {
       { /*Output area */}
       <div className="ResultArea">
         { /*Output of total costs */}
-        <label htmlFor="total">Gesamtkosten:</label>
-        <output id="total">{totalCost.toFixed(2)}</output>
-        <br />
+        <OutputFieldWithNumber
+          label="Gesamtkosten:"
+          id="total"
+          value={totalCost} />
+
         { /*Output of costs per kilometer */}
-        <label htmlFor="perKilometer">Kosten pro Kilometer:</label>
-        <output id="perKilometer">{costPerKilometer.toFixed(2)}</output>
+        <br />
+        <OutputFieldWithNumber
+          label="Kosten pro Kilometer:"
+          id="perKilometer"
+          value={costPerKilometer} />
       </div>
     </div>
   );
