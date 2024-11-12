@@ -37,24 +37,23 @@ function App() {
 
         <br />
         { /*Input of fuel consumption */}
-        <label htmlFor="consumption">Verbrauch auf 100 km:</label>
-        <input
-          type="number"
+        <NumberInputField
+          label="Verbrauch auf 100 km:"
           id="consumption"
-          name="consumption"
           value={consumption}
-          onChange={(e) => setConsumption(Number(e.target.value))}
+          onChange={setConsumption}
         />
+
         <br />
         { /*Input of fuel price */}
-        <label htmlFor="price">Preis pro Liter:</label>
-        <input
-          type="number"
+        <NumberInputField 
+          label="Preis pro Liter:"
           id="price"
-          name="price"
           value={price}
-          onChange={(e) => setPrice(Number(e.target.value))}
+          onChange={setPrice}
         />
+
+        
         <br />
         { /*Button to calculate total costs */}
         <button type="button" id="calculate" onClick={calculateCosts}>Berechnen</button>
