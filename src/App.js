@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { DEFAULT_DISTANCE, DEFAULT_CONSUMPTION, DEFAULT_PRICE } from './constants';
 import './App.css';
-import NumberInputField from './NumberInputField';
+import InputArea from './components/InputArea';
+
 import OutputFieldWithNumber from './OutputFieldWithNumber';
 
 function App() {
@@ -27,38 +28,15 @@ function App() {
       </div>
 
       { /*Input area */}
-      <div className="InputArea">
-        { /*Input of driven distance */}
-        <NumberInputField
-          label="Gefahrene Kilometer:"
-          id="distance"
-          value={distance}
-          onChange={setDistance}
-        />
-
-        <br />
-        { /*Input of fuel consumption */}
-        <NumberInputField
-          label="Verbrauch auf 100 km:"
-          id="consumption"
-          value={consumption}
-          onChange={setConsumption}
-        />
-
-        <br />
-        { /*Input of fuel price */}
-        <NumberInputField
-          label="Preis pro Liter:"
-          id="price"
-          value={price}
-          onChange={setPrice}
-        />
-
-
-        <br />
-        { /*Button to calculate total costs */}
-        <button type="button" id="calculate" onClick={calculateCosts}>Berechnen</button>
-      </div>
+      <InputArea
+        distance={distance}
+        setDistance={setDistance}
+        consumption={consumption}
+        setConsumption={setConsumption}
+        price={price}
+        setPrice={setPrice}
+        calculateCosts={calculateCosts}
+      />
       <br />
 
       { /*Output area */}
