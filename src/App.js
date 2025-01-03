@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { DEFAULT_DISTANCE, DEFAULT_CONSUMPTION, DEFAULT_PRICE } from './constants';
 import './App.css';
 import InputArea from './components/InputArea';
+import SubTitle from './components/SubTitle';
 
 import OutputFieldWithNumber from './OutputFieldWithNumber';
 
@@ -24,7 +25,7 @@ function App() {
       { /*Title of the page */}
       <div className="PageTitle">
         <h1>Fahrtkosten-Rechner</h1>
-        <p>Wer nicht fährt, hat keine Kosten. :-)</p>
+        <SubTitle text="Berechne die Kosten für eine Autofahrt." />
       </div>
 
       { /*Input area */}
