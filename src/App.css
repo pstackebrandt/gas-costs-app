@@ -14,3 +14,8 @@ h1{
   color: white;
 }
 
+.subtitle-text{
+  font-size: 24px;
+  margin-top: -10px;
+  margin-bottom: 30px;
+}

@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
  */
 function SubTitle({text}) {
   return (
-    <p>{text}</p>
+    <p className='subtitle-text'>{text}</p>
   );
 }
 
