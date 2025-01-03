@@ -32,6 +32,8 @@ function App() {
       <InputArea
         distance={distance}
         setDistance={setDistance}
+        distanceUnit='km'
+        setDistanceUnit={() => { }} // TODO Not implemented
         consumption={consumption}
         setConsumption={setConsumption}
         price={price}

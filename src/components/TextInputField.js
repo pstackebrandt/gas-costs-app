@@ -1,8 +1,8 @@
-// NumberInputField.js
+// TextInputField.js
 import React from 'react';
 
 /**
- * NumberInputField component renders a label and an input field for numbers.
+ * TextInputField component renders a label (if it gets a text) and an input field.
  *
  * @param {Object} props - The properties object.
  * @param {string} props.label - The text to be displayed as the label.
@@ -11,18 +11,18 @@ import React from 'react';
  * @param {Function} props.onChange - The function to be called when the input changes.
  * @returns {JSX.Element} The rendered label and input field.
  */
-const NumberInputField = ({ label, id, value, onChange }) => (
+const TextInputField = ({ label, id, value, onChange }) => (
   <div>
     <label htmlFor={id}>{label}</label>
     <input
-      type="number"
+      type="text"
       id={id}
       name={id}
       value={value}
-      onChange={(e) => onChange(Number(e.target.value))}
+      onChange={(e) => onChange(e.target.value)}
     />
     <br />
   </div>
 );
 
-export default NumberInputField;
+export default TextInputField;
