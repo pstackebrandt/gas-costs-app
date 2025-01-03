@@ -1,4 +1,6 @@
 // SubTitle.js
+import React from 'react';
+import PropTypes from 'prop-types';
 
 /**
  * SubTitle component renders a paragraph element with the provided text.
@@ -12,5 +14,13 @@ function SubTitle({text}) {
     <p>{text}</p>
   );
 }
+
+SubTitle.defaultProps = {
+  text: 'Default subtitle',
+};
+
+SubTitle.propTypes = {
+  text: PropTypes.string,
+};
 
 export default SubTitle;
