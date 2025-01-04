@@ -19,52 +19,68 @@ import TextInputField from './TextInputField';
  * @param {function} props.calculateCosts - Function to calculate the total costs.
  */
 const InputArea = ({
-    distance, setDistance, 
+    distance, setDistance,
     distanceUnit, setDistanceUnit,
     consumption, setConsumption,
     price, setPrice,
     calculateCosts }) => (
-    <div className="InputArea">
+    <div className="InputArea" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 
         { /*Input of driven distance */}
-        <div>
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start',
+            minWidth: '200px'
+         }}>
             <label htmlFor="distance">Gefahrene Entfernung</label>
-            <NumberInputField
-                label=""
-                id="distanceInput"
-                value={distance}
-                onChange={setDistance}
-                style={{ width: '80px' }}
-            />
 
-            { /* Input of distance unit */}
-            <TextInputField
-                label=""
-                id="distanceUnitSelector"
-                value={distanceUnit}
-                onChange={setDistanceUnit}
-                style={{ width: '50px' }}
+            <div style={{ display: 'flex', alignItems: 'center' }}>
+                <NumberInputField
+                    id="distanceInput"
+                    value={distance}
+                    onChange={setDistance}
+                    style={{ width: '80px' }}
+                />
+
+                { /* Input of distance unit */}
+                <TextInputField
+                    id="distanceUnitSelector"
+                    value={distanceUnit}
+                    onChange={setDistanceUnit}
+                    style={{ width: '50px', marginLeft: '10px' }}
+                />
+            </div>
+        </div>
+
+        <div style={{
+            display: 'flex', flexDirection: 'column',
+            alignItems: 'flex-start', marginTop: '20px',
+            minWidth: '200px'
+        }}>
+            <label htmlFor="consumption">Verbrauch auf 100 km</label>
+
+            { /*Input of fuel consumption*/}
+            <NumberInputField
+                id="consumption"
+                value={consumption}
+                onChange={setConsumption}
+                style={{ width: '80px' }}
             />
         </div>
 
-        <br />
-        { /*Input of fuel consumption*/}
-        <NumberInputField
-            label="Verbrauch auf 100 km:"
-            id="consumption"
-            value={consumption}
-            onChange={setConsumption}
-        />
-
-        {/*Input of fuel price*/}
-        <br />
-        <NumberInputField
-            label="Preis pro Liter:"
-            id="price"
-            value={price}
-            onChange={setPrice}
-        />
-
+        <div style={{
+            display: 'flex', flexDirection: 'column',
+            alignItems: 'flex-start', marginTop: '20px',
+            minWidth: '200px'
+        }}>
+            {/*Input of fuel price*/}
+            <label htmlFor="price">Preis pro Liter</label>
+            <NumberInputField
+                id="price"
+                value={price}
+                onChange={setPrice}
+                style={{ width: '80px' }}
+            />
+        </div>
+        
         { /*Button to calculate total costs */}
         <br />
         <button type="button" id="calculate" onClick={calculateCosts}>Berechnen</button>
