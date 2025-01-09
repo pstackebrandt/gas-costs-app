@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gas-costs-app/static/css/main.92f6ff36.css",
+    "main.js": "/gas-costs-app/static/js/main.e69211ed.js",
+    "static/js/453.7f7c0123.chunk.js": "/gas-costs-app/static/js/453.7f7c0123.chunk.js",
+    "index.html": "/gas-costs-app/index.html",
+    "main.92f6ff36.css.map": "/gas-costs-app/static/css/main.92f6ff36.css.map",
+    "main.e69211ed.js.map": "/gas-costs-app/static/js/main.e69211ed.js.map",
+    "453.7f7c0123.chunk.js.map": "/gas-costs-app/static/js/453.7f7c0123.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92f6ff36.css",
+    "static/js/main.e69211ed.js"
+  ]
+}
