@@ -11,10 +11,9 @@ interface OutputFieldWithNumberProps {
  * OutputFieldWithNumber component renders a label and an output field
  * with a number.
  *
- * @param props - The properties object.
- * @param props.label - The label to be displayed.
- * @param props.id - The id of the output field.
- * @param props.value - The value to be displayed.
+ * @param label - The label to be displayed.
+ * @param id - The id of the output field.
+ * @param value - The value to be displayed.
  */
 const OutputFieldWithNumber: React.FC<OutputFieldWithNumberProps> = ({
   label,

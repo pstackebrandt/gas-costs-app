@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { DEFAULT_DISTANCE, DEFAULT_CONSUMPTION, DEFAULT_PRICE } from './constants';
-import './style.css';
+import './App.css';
 import InputArea from './components/InputArea';
 import SubTitle from './components/SubTitle';
 
-import OutputFieldWithNumber from './OutputFieldWithNumber';
+import OutputFieldWithNumber from './components/OutputFieldWithNumber';
 
 function App() {
   const [distance, setDistance] = useState(DEFAULT_DISTANCE);
