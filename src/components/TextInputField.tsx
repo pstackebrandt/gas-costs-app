@@ -1,19 +1,31 @@
 // TextInputField.tsx
-import React, {memo} from 'react';
-import PropTypes from 'prop-types';
+
+import React, { memo } from "react";
+
+interface TextInputFieldProps {
+  titleText?: string;
+  id: string;
+  value: string;
+  onChange: (value: string) => void;
+  style?: React.CSSProperties;
+}
 
 /**
  * TextInputField component renders a label (if it gets a text) and an input field.
  *
- * @param {Object} props - The properties object.
- * @param {string} props.titleText - The text to be displayed as the label.
- * @param {string} props.id - The id of the input field.
- * @param {string} props.value - The value of the input field.
- * @param {Function} props.onChange - The function to be called when the input changes.
- * @param {Object} props.style - The style object to be applied
- * @returns {JSX.Element} The rendered label and input field.
+ * @param titleText - The text to be displayed as the label.
+ * @param id - The id of the input field.
+ * @param value - The value of the input field.
+ * @param onChange - The function to be called when the input changes.
+ * @param style - The style object to be applied
  */
-const TextInputField = ({ titleText, id, value, onChange, style = {} }) => (
+const TextInputField: React.FC<TextInputFieldProps> = ({
+  titleText = "",
+  id,
+  value,
+  onChange,
+  style = {},
+}) => (
   <div>
     {titleText && <label htmlFor={id}>{titleText}</label>}
     <input
@@ -27,18 +39,5 @@ const TextInputField = ({ titleText, id, value, onChange, style = {} }) => (
     <br />
   </div>
 );
-
-TextInputField.propTypes = {
-  titleText: PropTypes.string,
-  id: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  style: PropTypes.object,
-};
-
-TextInputField.defaultProps = {
-  titleText: '',
-  style: {},
-};
 
 export default memo(TextInputField);
