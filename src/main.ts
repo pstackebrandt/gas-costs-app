@@ -1,24 +1,64 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import React, { useState } from 'react';
+import { DEFAULT_DISTANCE, DEFAULT_CONSUMPTION, DEFAULT_PRICE } from './constants';
+import './style.css';
+import InputArea from './components/InputArea';
+import SubTitle from './components/SubTitle';
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+import OutputFieldWithNumber from './OutputFieldWithNumber';
+
+function App() {
+  const [distance, setDistance] = useState(DEFAULT_DISTANCE);
+  const [consumption, setConsumption] = useState(DEFAULT_CONSUMPTION);
+  const [price, setPrice] = useState(DEFAULT_PRICE);
+  const [totalCost, setTotalCost] = useState(0);
+  const [costPerKilometer, setCostPerKilometer] = useState(0);
+
+  const calculateCosts = () => {
+    const total = (distance / 100) * consumption * price;
+    const perKilometer = total / distance;
+    setTotalCost(total);
+    setCostPerKilometer(perKilometer);
+  };
+
+  return (
+    <div className="App">
+      { /*Title of the page */}
+      <div className="PageTitle">
+        <h1>Fahrtkosten-Rechner</h1>
+        <SubTitle text="Berechne die Kosten für eine Autofahrt." />
+      </div>
+
+      { /*Input area */}
+      <InputArea
+        distance={distance}
+        setDistance={setDistance}
+        distanceUnit='km'
+        setDistanceUnit={() => { }} // TODO Not implemented
+        consumption={consumption}
+        setConsumption={setConsumption}
+        price={price}
+        setPrice={setPrice}
+        calculateCosts={calculateCosts}
+      />
+      <br />
+
+      { /*Output area */}
+      <div className="ResultArea">
+        { /*Output of total costs */}
+        <OutputFieldWithNumber
+          label="Gesamtkosten:"
+          id="total"
+          value={totalCost} />
+
+        { /*Output of costs per kilometer */}
+        <br />
+        <OutputFieldWithNumber
+          label="Kosten pro Kilometer:"
+          id="perKilometer"
+          value={costPerKilometer} />
+      </div>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+  );
+}
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+export default App;
