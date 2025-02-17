@@ -18,7 +18,16 @@ The Gas Costs App is a React application designed to help users calculate and tr
 
 [Code on GitHub](https://github.com/pstackebrandt/gas-costs-app)
 
+## Project Planing
+
 [Project Planing at GitHub](https://github.com/users/pstackebrandt/projects/4)
+
+## Project History
+
+1. Created with Create React App and JavaScript
+2. Converted to React with Vite
+   - Transformation to TypeScript in progress
+   - Transformation to use of SCSS and CSS Modules in progress
 
 ## Installation
 
