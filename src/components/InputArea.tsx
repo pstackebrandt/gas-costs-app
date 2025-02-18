@@ -38,7 +38,7 @@ const InputArea: React.FC<InputAreaProps> = ({
   setConsumption,
   price,
   setPrice,
-  calculateCosts,
+  calculateCosts
 }) => (
   <div
     className="InputArea"
