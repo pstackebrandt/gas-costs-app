@@ -1,0 +1,11 @@
+@use '../styles/_variables.scss' as *;
+@use '../styles/base/_typography.scss' as *;
+
+.appVersion {
+    font-size: $version-text-font-size;
+    color: $color-text;
+    padding: $space-s $space-m;
+    background-color: rgba(0, 0, 0, 0); //$color-version-bg;
+    border-radius: $border-radius-m;
+    opacity: 1;
+  }

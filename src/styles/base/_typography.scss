@@ -1,0 +1,60 @@
+@use "../variables" as *;
+
+// Typography
+// --------------------------------------------------------------------------
+// I took many of this definitions from the project hacker-stories.
+// That's why many are unused.
+
+// Font Families
+$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  "Droid Sans", "Helvetica Neue", sans-serif;
+$font-family-code: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+
+// Font Sizes
+// --------------------------------------------------------------------------
+$font-size-s: 0.8rem;
+$font-size-m: 1rem;
+$font-size-m-p: 1.2rem; // p: plus
+$font-size-l-m: 1.6rem; // m: minus
+$font-size-l: 1.8rem;
+$font-size-xl: 2rem;
+$font-size-xxl: 2.5rem;
+
+$footer-text-font-size: clamp($font-size-s, 1.6vw, $font-size-m);
+$version-text-font-size: $footer-text-font-size;
+$body-text-font-size: clamp($font-size-m, 1.8vw, $font-size-m-p);
+$page-title-font-size: clamp($font-size-xl, 2.6vw, $font-size-xxl);
+$page-subtitle-font-size: clamp($font-size-xl, 2.4vw, $font-size-xl); 
+$section-title-font-size: clamp($font-size-xl, 2.2vw, $font-size-xxl);
+$article-title-font-size: clamp($font-size-l-m, 2vw, $font-size-l);
+
+// Global heading styles
+// --------------------------------------------------------------------------
+h1 {
+    font-size: $font-size-xxl;
+    color: $color-title;
+    margin-top: $space-m;
+    margin-bottom: $space-m;
+}
+
+h2 {
+    font-size: $font-size-l;
+    color: $color-title;
+    margin-top: $space-m;
+    margin-bottom: $space-m;
+    padding: $space-m;
+    text-align: center;
+}
+
+h3 {
+    font-size: $font-size-m;
+    color: $color-title;
+    margin-top: $space-m;
+    margin-bottom: $space-s;
+}
+
+h4 {
+    font-size: $font-size-s;
+    color: $color-subtitle;
+    margin-bottom: $space-xs;
+}

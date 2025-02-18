@@ -1,0 +1,15 @@
+@use '../styles/base/_typography.scss' as *;
+@use '../styles/_variables.scss' as *;
+
+.footer {
+    background-color: $color-footer-bg;
+    color: $color-text;
+    text-align: center;
+    padding: $space-m $space-l;
+    font-size: $footer-text-font-size;
+    margin-top: $space-m;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+  }

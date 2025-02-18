@@ -1,0 +1,98 @@
+// ==========================================================================
+// Design Tokens
+// ==========================================================================
+
+// Colors
+// --------------------------------------------------------------------------
+
+// Base Colors
+$color-white: white; // because used in cjs.js
+$color-black: black;
+$color-blue: blue;
+
+// Neutral Colors - grey
+$color-gray-100: #f8f9fa;
+$color-gray-200: #e9ecef;
+$color-gray-300: #dee2e4;
+$color-gray-400: #ced4da;
+$color-gray-500: #adb5bd;
+$color-gray-600: #6c757d;
+$color-gray-700: #495057;
+$color-gray-800: #343a40;
+$color-gray-900: #212529;
+
+// Brand Colors
+$primary: #1969e1; // Your main brand color
+$secondary: #83a4d4; // Secondary brand color
+$color-primary: $primary;
+$color-secondary: $secondary;
+
+// Extended Color Palette
+//    Variations of the primary color
+$color-blue-light: #83a4d4;
+$color-blue-light-m: #bfc7d5;
+$color-blue-light-s: #ced6e3;
+$color-blue-mid: #598ad4;
+$color-blue-dark: rgba(0, 0, 0, 0.8);
+
+$color-orange-faded: #f2ddbe;
+
+$color-success: #28a745;
+$color-danger: #dc3545;
+$color-error: red;
+$color-warning: #ffc107;
+$color-info: #17a2b8;
+
+// Text Colors
+$color-text-dark: #333;
+$color-text-light: $color-white;
+$color-text-muted: #6c757d;
+
+// Semmantic text colors
+$text-primary: $color-gray-200; // common text color
+$text-secondary: $color-gray-600;
+$text-muted: $color-gray-500;
+
+$link-color: $color-primary; // link text color
+$link-hover-color: darken($color-primary, 15%); // link hover text color
+
+$color-title: lighten($color-secondary, 20%);
+$color-subtitle: lighten($color-secondary, 20%);
+$color-text: $text-primary;
+
+// Background Colors
+$color-bg-light: #fff;
+$color-bg-light-s: $color-blue-light-s;
+$color-bg-light-m: $color-blue-light-m;
+$color-bg-light-l: $color-blue-light;
+$color-bg-mid: $color-blue-mid;
+$color-bg-header: $color-orange-faded;
+$color-button-bg: $color-blue-light-s;
+$color-footer-bg: $color-blue-dark;
+$color-version-bg: rgba(0, 0, 0, 0); // $color-blue-dark looks darker than in the footer, so use transparent
+$border-color: $color-gray-300;
+$background-primary: $color-white;
+$background-secondary: $color-gray-100;
+
+// Breakpoints
+$breakpoint-s: 480px;
+$breakpoint-m: 768px;
+$breakpoint-l: 1024px;
+
+// Spacing
+// --------------------------------------------------------------------------
+$space-xs: 0.25rem; // 4px
+$space-s: 0.3rem; // 4.8px
+$space-m: 0.5rem; // 8px
+$space-l: 1rem; // 16px
+$space-xl: 2rem; // 32px
+
+// Borders
+// --------------------------------------------------------------------------
+$border-radius-s: 0.2rem;
+$border-radius-m: 0.5rem;
+$border-radius-l: 1rem;
+
+// Layout
+$header-footer-min-height: 20vh;
+$mobile-header-footer-min-height: 10vh;

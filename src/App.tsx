@@ -3,7 +3,7 @@ import { DEFAULT_DISTANCE, DEFAULT_CONSUMPTION, DEFAULT_PRICE } from './constant
 import './App.css';
 import InputArea from './components/InputArea';
 import SubTitle from './components/SubTitle';
-
+import Footer from './components/Footer';
 import OutputFieldWithNumber from './components/OutputFieldWithNumber';
 
 function App() {
@@ -57,6 +57,7 @@ function App() {
           id="perKilometer"
           value={costPerKilometer} />
       </div>
+      <Footer />
     </div>
   );
 }
