@@ -1,5 +1,5 @@
-// SubTitle.tsx
 import React from 'react';
+import styles from './SubTitle.module.scss';
 
 /**
  * SubTitle component renders a paragraph element with the provided text.
@@ -13,7 +13,7 @@ interface SubTitleProps {
 }
 
 const SubTitle: React.FC<SubTitleProps> = ({ text = 'Default subtitle' }) => {
-  return <p className="subtitle-text">{text}</p>;
+  return <p className={styles.subtitleText}>{text}</p>;
 };
 
 export default SubTitle;

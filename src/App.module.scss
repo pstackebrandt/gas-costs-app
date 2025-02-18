@@ -1,0 +1,21 @@
+@use "./styles/_variables.scss" as *;
+@use "./styles/base/_typography.scss" as *;
+
+.App {
+  font-family: $font-family-text;
+  text-align: center;
+  font-size: $font-size-m;
+  background-color: $color-bg-app;
+  color: $color-text;
+  margin: $space-l;
+  padding-top: $space-l;
+}
+
+h1 {
+  font-size: $page-title-font-size;
+  color: $color-title;
+}
+
+.ResultArea {
+  margin-bottom: $space-xxl;
+}

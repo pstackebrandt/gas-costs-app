@@ -1,0 +1,10 @@
+@use "../styles/_variables.scss" as *;
+@use "../styles/base/_typography.scss" as *;
+
+.subtitleText {
+  font-size: $page-subtitle-font-size;
+  color: $color-title;
+  margin-top: -$space-m;
+  margin-bottom: $space-l;
+}
+  

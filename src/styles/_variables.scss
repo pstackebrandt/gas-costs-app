@@ -32,7 +32,8 @@ $color-secondary: $secondary;
 $color-blue-light: #83a4d4;
 $color-blue-light-m: #bfc7d5;
 $color-blue-light-s: #ced6e3;
-$color-blue-mid: #598ad4;
+$color-blue-m: #598ad4;
+$color-blue-m-m: darken($color-blue-m, 20%);
 $color-blue-dark: rgba(0, 0, 0, 0.8);
 
 $color-orange-faded: #f2ddbe;
@@ -65,11 +66,14 @@ $color-bg-light: #fff;
 $color-bg-light-s: $color-blue-light-s;
 $color-bg-light-m: $color-blue-light-m;
 $color-bg-light-l: $color-blue-light;
-$color-bg-mid: $color-blue-mid;
+$color-bg-m: $color-blue-m-m;
+
+$color-bg-app: $color-bg-m;
 $color-bg-header: $color-orange-faded;
 $color-button-bg: $color-blue-light-s;
 $color-footer-bg: $color-blue-dark;
 $color-version-bg: rgba(0, 0, 0, 0); // $color-blue-dark looks darker than in the footer, so use transparent
+
 $border-color: $color-gray-300;
 $background-primary: $color-white;
 $background-secondary: $color-gray-100;
@@ -81,12 +85,12 @@ $breakpoint-l: 1024px;
 
 // Spacing
 // --------------------------------------------------------------------------
-$space-xs: 0.25rem; // 4px
-$space-s: 0.3rem; // 4.8px
-$space-m: 0.5rem; // 8px
-$space-l: 1rem; // 16px
-$space-xl: 2rem; // 32px
-
+$space-xs: 0.25rem;
+$space-s: 0.3rem;
+$space-m: 0.5rem;
+$space-l: 1rem;
+$space-xl: 2rem; 
+$space-xxl: 3rem;
 // Borders
 // --------------------------------------------------------------------------
 $border-radius-s: 0.2rem;

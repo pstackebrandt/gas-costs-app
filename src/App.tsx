@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { DEFAULT_DISTANCE, DEFAULT_CONSUMPTION, DEFAULT_PRICE } from './constants';
-import './App.css';
+
 import InputArea from './components/InputArea';
 import SubTitle from './components/SubTitle';
 import Footer from './components/Footer';
 import OutputFieldWithNumber from './components/OutputFieldWithNumber';
+import styles from './App.module.scss';
 
 function App() {
   const [distance, setDistance] = useState(DEFAULT_DISTANCE);
@@ -21,9 +22,9 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className={styles.App}>
       { /*Title of the page */}
-      <div className="PageTitle">
+      <div>
         <h1>Fahrtkosten-Rechner</h1>
         <SubTitle text="Berechne die Kosten für eine Autofahrt." />
       </div>
@@ -43,7 +44,7 @@ function App() {
       <br />
 
       { /*Output area */}
-      <div className="ResultArea">
+      <div className={styles.ResultArea}>
         { /*Output of total costs */}
         <OutputFieldWithNumber
           label="Gesamtkosten:"
