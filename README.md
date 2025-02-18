@@ -20,7 +20,7 @@ The Gas Costs App is a React application designed to help users calculate and tr
 
 ## Project Planing
 
-[Project Planing at GitHub](https://github.com/users/pstackebrandt/projects/4)
+[Project Planning at GitHub](https://github.com/users/pstackebrandt/projects/4)
 
 ## Project History
 
