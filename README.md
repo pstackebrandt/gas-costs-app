@@ -60,3 +60,17 @@ npm run dev
 ```
 
 This will start the development server, and you can access the app at `http://localhost:5173`.
+
+## Deployment
+
+To deploy the app, use the following command:
+
+```bash
+npm run deploy
+```
+
+This will build the app and deploy it to the GitHub Pages.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
