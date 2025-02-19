@@ -6,7 +6,7 @@ import styles from './AppVersion.module.scss';
 const AppVersion: React.FC = () => {
   return (
     <div className={styles.appVersion}>
-      <p>Version: {pkg.version}</p>
+      Version: {pkg.version}
     </div>
   );
 };

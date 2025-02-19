@@ -79,12 +79,14 @@ $background-primary: $color-white;
 $background-secondary: $color-gray-100;
 
 // Breakpoints
+$breakpoint-s-m: 450px;
 $breakpoint-s: 480px;
 $breakpoint-m: 768px;
 $breakpoint-l: 1024px;
 
 // Spacing
 // --------------------------------------------------------------------------
+$space-xs-m: 0.125rem;
 $space-xs: 0.25rem;
 $space-s: 0.3rem;
 $space-m: 0.5rem;

@@ -1,5 +1,5 @@
-@use '../styles/base/_typography.scss' as *;
-@use '../styles/_variables.scss' as *;
+@use "../styles/base/_typography.scss" as *;
+@use "../styles/_variables.scss" as *;
 
 .footer {
     background-color: $color-footer-bg;
@@ -8,8 +8,43 @@
     padding: $space-m $space-l;
     font-size: $footer-text-font-size;
     margin-top: $space-m;
+
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    @media (max-width: $breakpoint-s-m) {
+        justify-content: center;
+    }
+
+    @media (max-width: $breakpoint-s) {
+        justify-content: space-around;
+    }
+
     opacity: 1;
-  }
+}
+
+.footerTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $breakpoint-s) {
+        flex-direction: row;
+        align-items: left;
+        justify-content: left;
+    }
+
+    @media (max-width: $breakpoint-s-m) {
+        flex-direction: column;
+        padding: $space-xs $space-m;
+    }
+}
+
+.footerText {
+    @media (max-width: $breakpoint-s) {
+        padding: $space-xs-m $space-m;
+    }
+}

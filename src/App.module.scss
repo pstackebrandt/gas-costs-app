@@ -7,8 +7,11 @@
   font-size: $font-size-m;
   background-color: $color-bg-app;
   color: $color-text;
-  margin: $space-l;
+
   padding-top: $space-l;
+  margin: $space-l $space-m 0 $space-m;
+  
+  min-width: 250px;
 }
 
 h1 {
