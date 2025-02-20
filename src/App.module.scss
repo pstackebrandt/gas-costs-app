@@ -2,14 +2,15 @@
 @use "./styles/base/_typography.scss" as *;
 
 .App {
+  position: relative; // for the app icon
+  
   font-family: $font-family-text;
   text-align: center;
   font-size: $font-size-m;
   background-color: $color-bg-app;
   color: $color-text;
 
-  padding-top: $space-l;
-  margin: $space-l $space-m 0 $space-m;
+  margin: 0 $space-m 0 $space-m;
   
   min-width: 250px;
 }

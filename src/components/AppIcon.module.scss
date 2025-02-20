@@ -1,0 +1,15 @@
+@use '../styles/_variables.scss' as *;
+
+.appIcon {
+  position: absolute;
+  top: $space-m;
+  left: $space-m;
+  width: 32px;
+  height: 32px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+} 

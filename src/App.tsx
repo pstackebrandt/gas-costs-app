@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { DEFAULT_DISTANCE, DEFAULT_CONSUMPTION, DEFAULT_PRICE } from './constants';
 
-import InputArea from './components/InputArea';
+import NavHeader from './components/NavHeader';
 import SubTitle from './components/SubTitle';
-import Footer from './components/Footer';
+import InputArea from './components/InputArea';
 import OutputFieldWithNumber from './components/OutputFieldWithNumber';
+import Footer from './components/Footer';
 import styles from './App.module.scss';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
   return (
     <div className={styles.App}>
+      <NavHeader />
       { /*Title of the page */}
       <div>
         <h1>Fahrtkosten-Rechner</h1>

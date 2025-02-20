@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 8.4666665 8.4666666"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="favicon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title7">Gas cost app fav icon</title>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="22.838676"
+     inkscape:cx="27.45343"
+     inkscape:cy="13.68293"
+     inkscape:window-width="2560"
+     inkscape:window-height="1351"
+     inkscape:window-x="2391"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1"
+     showgrid="false" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Background"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ff6600;fill-opacity:0.844828;stroke:none;stroke-width:0.276105;stroke-linecap:butt;stroke-dasharray:none"
+       id="rect1"
+       width="6.3615689"
+       height="6.9987378"
+       x="1.0476971"
+       y="0.67698091" />
+  </g>
+  <g
+     id="g9"
+     transform="matrix(0.62339568,0,0,0.64048865,1.8180696,1.6947487)">
+    <g
+       inkscape:groupmode="layer"
+       id="layer2"
+       inkscape:label="drop">
+      <path
+         style="fill:#0000ff;stroke-width:0.396616"
+         d="M 3.5382354,7.3442786 C 1.4960261,6.8997162 1.4316034,5.9169141 1.8057227,4.9088629 2.1289306,4.0379911 3.1889259,2.9528339 3.5159899,0.90969729"
+         id="path7"
+         sodipodi:nodetypes="csc"
+         inkscape:label="left half - path" />
+      <path
+         style="fill:#0000ff;stroke-width:0.431195"
+         d="M 4.2004476,7.328486 C 6.6142815,6.8839236 6.6904273,5.9011215 6.2482287,4.8930703 5.8662061,4.0221985 4.6133215,2.9370413 4.2267412,0.89390467"
+         id="path7-8"
+         sodipodi:nodetypes="csc"
+         inkscape:label="right half - path" />
+      <g
+         inkscape:groupmode="layer"
+         id="layer3"
+         inkscape:label="circle" />
+      <ellipse
+         style="fill:#0000ff;stroke-width:0.28133"
+         id="path8"
+         cx="3.8288035"
+         cy="6.0067606"
+         rx="1.7551094"
+         ry="1.3496385"
+         inkscape:label="lower end - circle" />
+      <rect
+         style="fill:#0000ff;stroke-width:0.264583"
+         id="rect9"
+         width="0.75301719"
+         height="3.9504442"
+         x="3.4870489"
+         y="1.1353183"
+         inkscape:label="fill middle - rectangle " />
+      <ellipse
+         style="fill:#0000ff;stroke-width:2.78312"
+         id="path9"
+         cx="3.8809342"
+         cy="1.0484319"
+         rx="0.38230103"
+         ry="0.33016908"
+         inkscape:label="upper end - circle " />
+    </g>
+  </g>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Gas cost app fav icon</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

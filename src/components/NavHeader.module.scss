@@ -1,0 +1,11 @@
+@use '../styles/_variables.scss' as *;
+
+.navHeader {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: $color-bg-app;
+  padding: $space-m;
+  min-height: $space-l;
+  margin-bottom: $space-l;
+} 
